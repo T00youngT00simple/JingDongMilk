@@ -1,0 +1,30 @@
+2019-04-14 15:56:46 [scrapy.core.scraper] ERROR: Spider error processing <GET http://c0.3.cn/stock?skuId=10809060539&cat=1320,5019,12215&venderId=603837&area=5_274_49707_0> (referer: http://item.jd.com/10809060539.html)
+Traceback (most recent call last):
+  File "d:\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\py\PY_EX\scrapy\JingDong_Milk\JingDong_Milk\spiders\milk_spider.py", line 39, in parse_getShopnameandPrice
+    item1['shop_name']= js['stock']['self_D']['vender']
+KeyError: 'self_D'
+2019-04-14 15:56:47 [scrapy.core.scraper] ERROR: Spider error processing <GET http://c0.3.cn/stock?skuId=28759630314&cat=1320,5019,12215&venderId=663284&area=5_274_49707_0> (referer: http://item.jd.com/28759630314.html)
+Traceback (most recent call last):
+  File "d:\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\py\PY_EX\scrapy\JingDong_Milk\JingDong_Milk\spiders\milk_spider.py", line 39, in parse_getShopnameandPrice
+    item1['shop_name']= js['stock']['self_D']['vender']
+KeyError: 'self_D'
